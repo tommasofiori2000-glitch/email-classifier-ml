@@ -1,9 +1,11 @@
-    # -*- coding: utf-8 -*-
 """
-Created on Mon Feb  5 11:32:12 2024
-@author: tommy
-Last date: 2024-02-06
+Email Classification Project
+
+This script implements an email classification pipeline inspired by academic
+literature on keyword-based text processing. Developed for a Machine Learning
+course.
 """
+
 
 import os
 import re
@@ -270,3 +272,4 @@ fn_debug("elaboration done")
 
 
     
+
