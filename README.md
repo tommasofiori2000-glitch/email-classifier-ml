@@ -1,28 +1,41 @@
 # Email Classifier – Machine Learning Project
 
-This project implements a Python-based email classification system developed
-as part of a Machine Learning course.
+This project implements an email classification pipeline inspired by academic
+literature on keyword-based text processing and developed for a Machine Learning
+course.
 
 ## Project Overview
-The objective of this project is to preprocess and classify corporate emails
-using supervised machine learning techniques. The workflow includes text
-cleaning, sentence segmentation, keyword extraction, email summarization, and
-classification based on semantic coherence.
+The goal of the project is to automatically classify corporate support emails
+into semantic categories using text preprocessing, keyword extraction, and
+rule-based classification strategies.
+
+## Dataset
+The original dataset consists of anonymized corporate emails stored in JSON
+format. Due to privacy constraints, the raw data is not publicly available.
+The dataset includes email metadata, content, and thread structure.
+
+## Classification Logic
+Emails are classified into the following categories:
+- farming
+- storage
+- network
+- sysop
+
+The classification is performed by analyzing email subjects and contents,
+including thread-level information and category-specific keyword dictionaries.
 
 ## Methods
 - Text preprocessing and cleaning
-- Sentence segmentation and word frequency analysis
-- Keyword extraction and email summarization
-- Supervised classification strategies
-- Comparison of alternative classification approaches
+- Keyword extraction
+- Email summarization
+- Rule-based classification
+- Thread-level label propagation
 
 ## Technologies
 - Python
 - Pandas
-- Scikit-learn
-- Basic NLP techniques
+- NLTK
 
-## Notes
-This project was developed for educational purposes and focuses on the design
-of a clear and modular machine learning pipeline.
-
+## References
+This project is inspired by academic work on email classification and text
+summarization, adapted and implemented for educational purposes.
